@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/day15/registSimpleServlet" method="post">
+		<table align="center">
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" name="username"/></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" name="password"/></td>
+			</tr>
+			<tr>
+				<td>重复密码：</td>
+				<td><input type="password" id="repassword"/></td>
+			</tr>
+			<tr>
+				<td>姓名：</td>
+				<td><input type="text" name="name" /></td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td>
+					<input type="radio" name="gender" value="m" />男
+					<input type="radio" name="gender" value="f" />女
+				</td>
+			</tr>
+			<tr>
+				<td>爱好：</td>
+				<td>
+					<input type="checkbox" name="hobby" value="read" />读书
+					<input type="checkbox" name="hobby" value="coding" />编程
+					<input type="checkbox" name="hobby" value="sport" />运动<br/>
+					<input type="checkbox" name="hobby" value="music" />音乐
+					<input type="checkbox" name="hobby" value="movie" />电影
+					<input type="checkbox" name="hobby" value="game" />游戏
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" />
+					<input type="reset" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

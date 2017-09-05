@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+	
+	
+	
+	<!-- 测试request的Servlet -->
+	<servlet>
+		<servlet-name>demo</servlet-name>
+		<servlet-class>cn.itcast.day15.servlet.DemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>demo</servlet-name>
+		<url-pattern>/demoServlet</url-pattern>	
+	</servlet-mapping>
+
+	<!-- 测试request的Servlet -->
+	<servlet>
+		<servlet-name>param</servlet-name>
+		<servlet-class>cn.itcast.day15.servlet.RequestParameterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>param</servlet-name>
+		<url-pattern>/paramServlet</url-pattern>	
+	</servlet-mapping>
+
+	<!-- 测试中文乱码问题的Servlet -->
+	<servlet>
+		<servlet-name>chinese</servlet-name>
+		<servlet-class>cn.itcast.day15.servlet.ChineseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>chinese</servlet-name>
+		<url-pattern>/chineseServlet</url-pattern>	
+	</servlet-mapping>
+
+	<!-- 演示用户注册简易版的Servlet -->
+	<servlet>
+		<servlet-name>registSimple</servlet-name>
+		<servlet-class>cn.itcast.day15.servlet.UserRegistSimple</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registSimple</servlet-name>
+		<url-pattern>/registSimpleServlet</url-pattern>	
+	</servlet-mapping>
+
+	<!-- 演示用户注册的Servlet -->
+	<servlet>
+		<servlet-name>regist</servlet-name>
+		<servlet-class>cn.itcast.day15.servlet.RegistServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>regist</servlet-name>
+		<url-pattern>/registServlet</url-pattern>	
+	</servlet-mapping>
+
+	<!-- 显示信息的Servlet -->
+	<servlet>
+		<servlet-name>info</servlet-name>
+		<servlet-class>cn.itcast.day15.servlet.InfomationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>info</servlet-name>
+		<url-pattern>/infoServlet</url-pattern>	
+	</servlet-mapping>
+
+</web-app>
+
